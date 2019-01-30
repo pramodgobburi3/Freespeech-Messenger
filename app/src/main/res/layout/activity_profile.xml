@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pramodgobburi.freespeech.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/profile_white_layout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/colorPrimaryDark">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/default_profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_below="@id/profile_image"
+            android:id="@+id/profile_displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text="Display Name" />
+
+        <TextView
+            android:id="@+id/profile_status"
+            android:layout_below="@id/profile_displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:text="Status"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/profile_friendsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_status"
+            android:text="Total Friends: "
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/profile_friendRequest"
+        android:background="@drawable/register_rounded_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Add as friend"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="425dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/profile_declineRequest"
+        android:background="@drawable/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Delcine Request"
+        android:enabled="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="475dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/profile_white_layout"
+        android:background="#ffffff">
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

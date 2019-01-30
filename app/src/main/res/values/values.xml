@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalScrollMenuView"><attr format="dimension" name="icon_width"/><attr format="dimension" name="icon_height"/><attr format="color" name="backgroundMenuColor"/><attr format="color" name="backgroundNotifications"/><attr format="color" name="item_textColor"/><attr format="color" name="item_backgroundColor"/><attr format="dimension" name="item_marginTop"/><attr format="dimension" name="item_marginBottom"/><attr format="dimension" name="item_marginLeft"/><attr format="dimension" name="item_marginRight"/><attr format="color" name="item_colorSelected"/><attr format="dimension" name="item_textSize"/></declare-styleable>
+</resources>

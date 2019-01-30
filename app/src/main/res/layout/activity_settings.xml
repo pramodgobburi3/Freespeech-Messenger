@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.pramodgobburi.freespeech.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_marginTop="30dp"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_profile_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_displayname"
+        android:text="Display Name"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@id/settings_image"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_status"
+        android:layout_below="@id/settings_displayname"
+        android:text="@string/default_status"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_email"
+        android:layout_below="@id/settings_status"
+        android:layout_marginTop="5dp"
+        android:text="Email: "
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_changeStatus"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:paddingRight="22dp"
+        android:paddingLeft="22dp"
+        android:text="Update Status"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_changeImage"
+        android:backgroundTint="#ffffff"
+        android:layout_above="@id/settings_changeStatus"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:text="Change Avatar"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_chagePassword"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_above="@id/settings_changeImage"
+        android:layout_marginBottom="5dp"
+        android:text="Change Password"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

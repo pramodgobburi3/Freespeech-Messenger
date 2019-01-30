@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_background"
+    tools:context="com.example.pramodgobburi.freespeech.StartActivity">
+
+
+
+        <TextView
+            android:id="@+id/activity_start_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Speech Messenger"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:layout_marginTop="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/activity_start_regBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="#ffffff"
+            android:text="@string/need_an_account"
+            android:layout_alignParentBottom="true"/>
+
+
+    <Button
+        android:id="@+id/activity_start_loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_start_regBtn"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account?"
+        android:backgroundTint="#ffffff"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "888156440777",
+    "firebase_url": "https://freespeech-f5761.firebaseio.com",
+    "project_id": "freespeech-f5761",
+    "storage_bucket": "freespeech-f5761.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888156440777:android:bc162aa32e4a2245",
+        "android_client_info": {
+          "package_name": "com.example.pramodgobburi.freespeech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888156440777-t71kbmeevfnp58i13ossti2eo72nn6hf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pramodgobburi.freespeech",
+            "certificate_hash": "a8fedbb9c12c97dfd3a07c593a59d26c03f14762"
+          }
+        },
+        {
+          "client_id": "888156440777-jk7c8mq9a2hkbk0t06krsq4jjdtniddf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtiWgNJC7W6DB1zQL3vLR976H3vp6w2so"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888156440777-jk7c8mq9a2hkbk0t06krsq4jjdtniddf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

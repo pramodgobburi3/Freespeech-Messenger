@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pramodgobburi.freespeech.AnswerActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/chat_app_bar"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/callerPic"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/default_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/callerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/callerPic"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/callerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incoming Call"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/callerPic"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/answerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/accept"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:src="@drawable/icon_call" />
+
+        <ImageView
+            android:id="@+id/decline"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="30dp"
+            android:src="@drawable/icon_hangup" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

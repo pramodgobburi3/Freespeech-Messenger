@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pramodgobburi.freespeech.NewGroupActivity">
+
+
+
+        <include layout="@layout/app_bar_layout" android:id="@+id/group_add_appBarLayout"/>
+
+    <Button
+        android:id="@+id/add_group_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/group_add_appBarLayout"
+        android:background="@drawable/ic_camera"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/add_group_name"
+        android:layout_below="@id/group_add_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:hint="Group Name..."/>
+
+    <Button
+        android:id="@+id/group_add_friends"
+        android:clickable="false"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/capsule"
+        android:layout_below="@id/add_group_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Friends"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_marginBottom="15dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/group_friends_list"
+        android:layout_below="@id/group_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/group_add_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_forward"/>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

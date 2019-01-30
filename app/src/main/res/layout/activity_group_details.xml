@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pramodgobburi.freespeech.NewGroupActivity">
+
+
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/group_edit_appBarLayout"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/group_details_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/group_edit_appBarLayout"
+        android:src="@drawable/default_profile_image"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/edit_group_name"
+        android:layout_below="@id/group_edit_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_alignStart="@id/group_details_image"
+        android:layout_marginRight="10dp"
+        android:hint="Group Name..."/>
+
+    <Button
+        android:id="@+id/group_edit_members"
+        android:clickable="false"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/capsule"
+        android:layout_below="@id/group_details_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Members"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        />
+    <com.example.pramodgobburi.freespeech.HorizontalScrollMenuView
+        android:layout_below="@id/group_edit_members"
+        android:id="@+id/group_edit_currentUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundMenuColor="#F5F5F5"
+        app:icon_height="60dp"
+        app:icon_width="60dp"
+        app:item_backgroundColor="#F5F5F5"
+        app:item_colorSelected="#e5e5ff"
+        app:backgroundNotifications="#e5e5ff"
+        app:item_marginTop="1dp"
+        app:item_marginBottom="1dp"
+        app:item_marginLeft="1dp"
+        app:item_marginRight="3dp"
+        app:item_textColor="#7f7f7f"
+        app:item_textSize="3sp">
+
+    </com.example.pramodgobburi.freespeech.HorizontalScrollMenuView>
+
+    <Button
+        android:id="@+id/group_edit_friends"
+        android:clickable="false"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/capsule"
+        android:layout_below="@id/group_edit_currentUsers"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Friends"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+   <com.example.pramodgobburi.freespeech.VerticalScrollView
+       android:id="@+id/group_edit_friends_list"
+       android:layout_below="@id/group_edit_friends"
+       android:layout_marginLeft="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </com.example.pramodgobburi.freespeech.VerticalScrollView>
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/group_edit_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_check"/>
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
